@@ -1,0 +1,353 @@
+<style>
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background-color: black;
+    float: center;
+    width: 100%;
+    overflow: hidden;
+    max-height: 44px;
+}
+
+ul#menubar {
+    background-color: black;
+    padding: 0px 0px 0px 0px;
+    margin: 0%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+ul#menubar li {
+    display: inline;
+    width: 25%;
+    margin-right: 44px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+ul#menubar li a {
+    background-color: black;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    font-family: "San Francisco", "Avenir", "Helvetica";
+    font-weight: normal;
+    letter-spacing: 1px;
+    
+    -webkit-transition-property: color;
+       -moz-transition-property: color;
+         -o-transition-property: color;
+            transition-property: color;
+    -webkit-transition-duration: 0.15s;
+       -moz-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+ul#menubar li a:hover {
+    color: darkblack;
+}
+
+img#s88-logo {
+    width: 33px; 
+    height: 33px; 
+    padding: 0px 0px 0px 0px; 
+    margin: 5px 0px 5px 0px;
+    border: 0px;
+    overflow: hidden;
+    vertical-align: middle;
+    opacity: 1;
+    
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+    -webkit-transition-duration: 0.15s;
+       -moz-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+img#s88-logo:hover {
+    opacity: 0.5;
+}
+
+img#s88-search {
+    width: 27px; 
+    height: 27px; 
+    padding: 0px 0px 0px 0px; 
+    margin: 5px 0px 5px 0px;
+    border: 0px;
+    overflow: hidden;
+    vertical-align: middle;
+    opacity: 1;
+    
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+    -webkit-transition-duration: 0.15s;
+       -moz-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+img#s88-search:hover {
+    opacity: 0.5;
+}
+
+img#s88-search:focus {
+    outline: none;
+}
+
+.menudrop {
+    display: none;
+}
+
+/* RESPONSIVE NAVBAR DROPDOWN <--- VISIBILTIY LINE VISIBILITY LINE ---> */
+
+@media only screen and (max-width: 700px) {
+
+.navbar {
+    background-color: black;
+    float: left;
+    min-height: 44px;
+    max-height: 44px;
+    width: 100%;
+}
+
+ul#menubar .more {
+    display: none;
+}
+    
+.logo-small {
+    float: center;
+    width: 100%;
+}
+
+.navbutton {
+    vertical-align: middle;
+    background-color: black;
+    margin: none;
+    border: none;
+    cursor: pointer;
+    min-height: 40px;
+    max-height: 42px;
+    min-width: 40px;
+    max-width: 42px;
+
+    
+    opacity: 1;
+    -webkit-transition: opacity 0.15s linear;
+      -moz--transition: opacity 0.15s linear;
+         -o-transition: opacity 0.15s linear;
+}    
+
+.navbutton:hover {
+    opacity: 0.5;
+
+}
+    
+.navbutton:focus {
+    outline: none;
+
+}
+
+.menudrop {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    float: left;
+}
+    
+.dropDownMenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropDownLinks li {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    list-style: none;
+}
+    
+.dropDownMenu a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: "San Francisco", "Avenir", "Helvetica";
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    text-indent: 0px;
+    
+    -webkit-transition-property: color;
+       -moz-transition-property: color;
+         -o-transition-property: color;
+            transition-property: color;
+    -webkit-transition-duration: 0.15s;
+       -moz-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+    
+.dropDownMenu a:hover {
+    color: darkblack;
+    }
+
+.show {
+    display: block;
+}
+    
+}
+
+/* MAIN <--- VISIBILITY LINE VISIBILITY LINE VISIBILITY LINE ---> */
+
+.container {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.content {
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: transparent;
+    color: white;
+    font-family: "San Francisco";
+    text-align: center;
+}
+
+.content a:link {
+    text-decoration: none;
+    color: inherit
+}
+
+.content a:visited {
+    text-decoration: none;
+    color: inherit
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: inherit
+}
+    
+content a:active {
+    text-decoration: underline;
+    color: inherit
+}
+
+.content#primary {
+    height:800px;
+    background: 
+        linear-gradient(
+            rgba(60, 60, 60, 0.45),
+            rgba(60, 60, 60, 0.45)
+            ),
+        url("../Resources/Images/cloud-wp.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.block {
+    display: inline-block
+}
+
+.content#primary h1 {
+    color: white;
+    
+}
+
+.content#primary p {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.content img {
+    height: 40px;
+    width: 40px;
+    padding: 20px
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+    -webkit-transition-property: color;
+       -moz-transition-property: color;
+         -o-transition-property: color;
+            transition-property: color;
+    -webkit-transition-duration: 0.4s;
+       -moz-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    
+    -webkit-transition-property: background-color;
+       -moz-transition-property: background-color;
+         -o-transition-property: background-color;
+            transition-property: background-color;
+    -webkit-transition-duration: 0.4s;
+       -moz-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+footer {
+    overflow: hidden;
+    background-color: transparent;
+    color: lightgrey;
+    font-family: "San Francisco";
+    
+    height: 70px;
+    background-color: rgb(235, 235, 235);
+    color: darkgrey
+}
+</style>
